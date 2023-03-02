@@ -18,18 +18,17 @@ Route::get('/', function ($id) {
 });
 
 Route::get('/about', function () {
-    echo "Mayfana Laura Abdi  2141720169 ";
-});
-    
-
-
-Route::get('article/{id}', function ($id=1) {
-    echo "Halaman artikel dengan id 1";
+    echo "Mayfana Laura Abdi 2141720169 ";
 });
 
-Route::get('article/{id}', function ($id=2) {
-    echo "Halaman artikel dengan id 2";
+
+Route::get('article/{id}', function ($id) {
+    echo "Halaman artikel dengan id $id";
 });
+
+
+
+
 
 
 
