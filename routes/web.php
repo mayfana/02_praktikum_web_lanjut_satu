@@ -23,11 +23,11 @@ Route::get('/about', function () {
     
 
 
-Route::get('/article/1', function ($id) {
+Route::get('article/{id}', function ($id=1) {
     echo "Halaman artikel dengan id 1";
 });
 
-Route::get('/article/2', function ($id) {
+Route::get('article/{id}', function ($id=2) {
     echo "Halaman artikel dengan id 2";
 });
 
