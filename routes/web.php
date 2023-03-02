@@ -14,17 +14,22 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function ($id) {
-    return view('welcome');
+    echo "Selamat Datang";
 });
 
 Route::get('/about', function () {
-    return "<h1> Mayfana Laura Abdi  2141720169 </h1>";
+    echo "Mayfana Laura Abdi  2141720169 ";
+});
+    
+
+
+Route::get('/article/1', function ($id) {
+    echo "Halaman artikel dengan id 1";
 });
 
-Route::get('/article/1', function () {
-    return "<h1> Halaman artikel dengan id 1 </h1>";
+Route::get('/article/2', function ($id) {
+    echo "Halaman artikel dengan id 2";
 });
 
-Route::get('/article/2', function () {
-    return "<h1> Halaman artikel dengan id 2 </h1>";
-});
+
+
