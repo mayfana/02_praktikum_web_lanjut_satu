@@ -13,8 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/', function ($id) {
     return view('welcome');
+});
+
+Route::get('/about', function () {
+    return "<h1> Mayfana Laura Abdi  2141720169 </h1>";
 });
 
 Route::get('/article/1', function () {
